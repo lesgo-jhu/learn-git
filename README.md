@@ -7,4 +7,5 @@ Find a collection of Hello World programs in various langagues in hello/
 * C: gcc hello.c -o hello
 * Python: python3 hello.py
 
+* Matlab: hello.m
 
