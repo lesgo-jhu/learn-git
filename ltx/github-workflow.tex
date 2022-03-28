@@ -64,6 +64,13 @@ git push
 \end{lstlisting}
 This will push to the first remote repository listed in \texttt{git remote}.
 
+Starting August 2021, performing HTTPS git operations on command line also require authentication using a \emph{personal access token (PAT)}.
+Follow the steps in \url{https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token} to create a token. If the command line is not already authenticated, execute \lstinline|git push| with PAT as follows
+
+\begin{lstlisting}[breaklines=true]
+git push https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git
+\end{lstlisting}
+
 \item Once you're satisfied with your revisions and want to integrate into the official repository, you need to initiate a new pull request.  (You're requesting that the official repository pull your changes). Follow the instructions on screen to check that everything merges fine. If there are issues, you should merge the official repository into your server-side repository before making the pull request. If everything is ok, create the pull request. 
 \begin{figure*}[h!]
 \centering
